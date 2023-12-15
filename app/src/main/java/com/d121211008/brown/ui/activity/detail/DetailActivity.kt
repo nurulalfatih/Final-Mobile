@@ -33,6 +33,7 @@ import com.d121211008.brown.R
 import com.d121211008.brown.data.model.Brown
 import com.d121211008.brown.ui.theme.BrownThemePhotoTheme
 
+@Suppress("DEPRECATION")
 class DetailActivity : ComponentActivity() {
 
     private var selectedBrown: Brown? = null
