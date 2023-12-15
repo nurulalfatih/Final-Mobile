@@ -50,7 +50,7 @@ class MainActivity : ComponentActivity() {
 
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.secondary
+                    color = MaterialTheme.colorScheme.background
                 ) {
                     Column {
                         CenterAlignedTopAppBar(
@@ -69,7 +69,7 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
-    //
+
     @Composable
     private fun ListBrownScreen(mainUiState: MainUiState, modifier: Modifier = Modifier) {
         Column(
@@ -97,14 +97,15 @@ class MainActivity : ComponentActivity() {
     fun BrownCard(brown: Brown) {
         Card(
             modifier = Modifier
-                .padding(16.dp)
-                .border(1.dp, Color.Black, RoundedCornerShape(8.dp))
-                .height(280.dp)
                 .clickable {
                     val intent = Intent(this, DetailActivity::class.java)
                     intent.putExtra("Brown Theme Photo", brown)
                     startActivity(intent)
-                }) {
+                }
+                .padding(16.dp)
+                .border(1.dp, Color.Black, RoundedCornerShape(8.dp))
+                .height(280.dp)
+        ) {
             Column (
                 modifier = Modifier
                     .fillMaxWidth()

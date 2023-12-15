@@ -45,7 +45,7 @@ class DetailActivity : ComponentActivity() {
             BrownThemePhotoTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.onSecondary
+                    color = MaterialTheme.colorScheme.background
                 ) {
                     DetailsScreen()
                 }
