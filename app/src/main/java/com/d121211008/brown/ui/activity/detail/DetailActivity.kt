@@ -78,7 +78,7 @@ class DetailActivity : ComponentActivity() {
                 )
 
             //name
-            Text(text ="Name : ${selectedBrown?.tags.toString()}",
+            Text(text ="Tags : ${selectedBrown?.tags.toString()}",
                 style = MaterialTheme.typography.bodyLarge,
                 fontWeight = FontWeight.Bold )
             Spacer(modifier = Modifier.height(8.dp))
