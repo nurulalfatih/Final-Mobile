@@ -87,7 +87,7 @@ class DetailActivity : ComponentActivity() {
             Row {
                 Image(painter = painterResource(id = R.drawable.baseline_thumb_up_24), contentDescription = null)
                 Spacer(modifier = Modifier.width(8.dp))
-                Text(text =" ${selectedBrown?.likes.toString()}" )
+                Text(text = selectedBrown?.likes.toString())
             }
             Spacer(modifier = Modifier.height(8.dp))
 
@@ -95,7 +95,7 @@ class DetailActivity : ComponentActivity() {
             Row{
                 Image(painter = painterResource(id = R.drawable.baseline_remove_red_eye_24), contentDescription = null )
                 Spacer(modifier = Modifier.width(8.dp))
-                Text(text =" ${selectedBrown?.views.toString()}" )
+                Text(text = selectedBrown?.views.toString())
             }
             Spacer(modifier = Modifier.height(8.dp))
 
@@ -103,7 +103,7 @@ class DetailActivity : ComponentActivity() {
             Row{
                 Image(painter = painterResource(id = R.drawable.baseline_file_download_24), contentDescription = null )
                 Spacer(modifier = Modifier.width(8.dp))
-                Text(text =" ${selectedBrown?.downloads.toString()}" )
+                Text(text = selectedBrown?.downloads.toString())
             }
         }
     }
