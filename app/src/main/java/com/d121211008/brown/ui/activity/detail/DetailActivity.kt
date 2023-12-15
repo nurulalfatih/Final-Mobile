@@ -41,7 +41,7 @@ class DetailActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        selectedBrown = intent.getParcelableExtra("Brown Theme Photo")
+        selectedBrown = intent.getParcelableExtra("Brown Themed Photo")
         setContent {
             BrownThemePhotoTheme {
                 Surface(

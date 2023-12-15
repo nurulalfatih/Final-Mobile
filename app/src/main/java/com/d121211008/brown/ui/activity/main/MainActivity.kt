@@ -57,7 +57,7 @@ class MainActivity : ComponentActivity() {
                             modifier = Modifier.background(Color.Black),
                             title = {
                                 Text(
-                                    text ="Brown Theme Photo",
+                                    text ="Brown Themed Photo",
                                     fontWeight = FontWeight.Bold,
                                 )
                             }
@@ -99,7 +99,7 @@ class MainActivity : ComponentActivity() {
             modifier = Modifier
                 .clickable {
                     val intent = Intent(this, DetailActivity::class.java)
-                    intent.putExtra("Brown Theme Photo", brown)
+                    intent.putExtra("Brown Themed Photo", brown)
                     startActivity(intent)
                 }
                 .padding(16.dp)
